@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 150px;
+            border: 2px double rgb(255, 254, 252);
+            float: left;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        #main{
+            width: 540px;
+            height: auto;
+            box-shadow: 5px 7px 6px gray;
+            border-radius: 8px;
+            background-color:#7c9b8717;
+            
+        }
+        #one,#two,#three{
+            color: red;
+            font-size: 55px;
+        }
+        h4{
+            color: rgb(92, 88, 88);
+        }
+        .one:hover{
+            transition: all 0.4s;
+            background-color: rgb(70, 67, 97);
+            box-shadow: 5px 5px 5px gray;
+        }
+        .one:hover h5{
+            color: white;
+        }
+        .one:hover #one{
+            color: white;
+        }
+        .one:hover #two{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div class="one">
+        <h1 id="one"></h1>
+        <h4>Services</h4>
+        
+    </div>
+    <div class="one">
+        <h1 id="two"></h1>
+        <h4>Dealer</h4>
+    </div>
+    <div class="one">
+        <h1 id="three"></h1>
+        <h4>Happy Clients</h4>
+        
+    </div>
+    </div>
+
+    <script>
+      
+        var x = 1;
+        var y = 39;
+        var z = 80;
+        var one_count = document.getElementById("one");
+        var two_count = document.getElementById("two");   
+        var three_count = document.getElementById("three");  
+        
+      
+
+        function demo()
+        {
+            one_count.innerHTML = x++;
+            if(x === 51){
+                clearInterval(dev);
+               // one_count.innerHTML = "&phone;";               
+            }
+              
+
+        }
+        function demo2()
+        {
+            two_count.innerHTML = y++;
+            if(y === 91){
+                clearInterval(raj);
+            }
+        }
+        function demo3()
+        {
+            three_count.innerHTML = z++;
+            if(z === 131) 
+            {
+                clearInterval(kumar);
+            }
+        }
+
+        dev = setInterval(demo,100);
+        raj = setInterval(demo2,100);
+        kumar = setInterval(demo3,100);
+        
+    </script>
+
+</body>
+</html>
